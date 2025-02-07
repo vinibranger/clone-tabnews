@@ -1,0 +1,20 @@
+docker compose up || para iniciar o container no terminal
+
+docker compose up --detach || para iniciar fora do terminal
+
+docker ps -a || ver os container 
+
+docker logs clone-tabnews-database-1 || ver log do container
+
+docker compos down || destruir container depois up para recriar
+
+docker compose up -d --force-recreate || para forcar recriar o container docker 
+
+docker compose -f infra/compose.yaml up para ativar o container na pasta de infra
+
+sudo apt update || para atualziar pacotes do Ubunto
+
+sudo apt install postgresql-client || instalar o serviço do banco de dados
+
+psql --host=localhost --username=postgres --port=5432
+
