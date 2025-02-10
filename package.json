@@ -8,12 +8,20 @@
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watchAll",
+    "docker_run": "docker compose -f infra/compose.yaml  up -d",
+    "docker_stop": "docker compose -f infra/compose.yaml down",
+    "docker_recreat": "docker compose -f infra/compose.yaml up -d --force-recreate",
+    "docker_pause": "docker compose -f infra/compose.yaml pause",
+    "docker_play": "docker compose -f infra/compose.yaml unpause",
+    "docker_list_al": "docker compose -f infra/compose.yaml ps -a"
+
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "next": "^13.1.6",
+    "pg": "^8.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

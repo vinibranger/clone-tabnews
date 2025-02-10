@@ -10,7 +10,9 @@ docker compos down || destruir container depois up para recriar
 
 docker compose up -d --force-recreate || para forcar recriar o container docker 
 
-docker compose -f infra/compose.yaml up para ativar o container na pasta de infra
+docker compose -f infra/compose.yaml up para ativar o container na pasta de infragit pus
+
+docker compose -f infra/compose.yaml pause || para pausar container
 
 sudo apt update || para atualziar pacotes do Ubunto
 
@@ -18,3 +20,6 @@ sudo apt install postgresql-client || instalar o serviço do banco de dados
 
 psql --host=localhost --username=postgres --port=5432
 
+jest --watch || vai testar somente os teste novos 
+
+jest --watchAll || vai testar todos os testes 
