@@ -23,3 +23,10 @@ psql --host=localhost --username=postgres --port=5432
 jest --watch || vai testar somente os teste novos 
 
 jest --watchAll || vai testar todos os testes 
+
+
+git mv .env .env.development = comando que vai trocar o nome do meu arquivo .env
+
+process.env -> produção 
+.env.development -> desenvolvimento
+.env -> valor mais baixo na hierarquia 
