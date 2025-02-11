@@ -4,7 +4,7 @@
   "description": "Clone tab News Curso.Dev - Deschamps",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run docker_run && next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",

@@ -24,9 +24,11 @@ jest --watch || vai testar somente os teste novos
 
 jest --watchAll || vai testar todos os testes 
 
-
+git commit -am 'descre'
 git mv .env .env.development = comando que vai trocar o nome do meu arquivo .env
 
 process.env -> produção 
 .env.development -> desenvolvimento
 .env -> valor mais baixo na hierarquia 
+
+comando para criar pasta via terminal
