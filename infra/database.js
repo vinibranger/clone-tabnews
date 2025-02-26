@@ -8,11 +8,18 @@ async function query(queryObject){
     password: process.env.POSTGRES_PASSWORD,
     port:process.env.POSTGRES_PORT
   });
-  await client.connect();
-  await client.query(queryObject);
-  const resultado = await client.query(queryObject);
-  await client.end();
-  return resultado;
+  try {
+    await client.connect();
+    const resultado = await client.query(queryObject);
+    return resultado;
+  }catch (error){
+    console.error('Erro para executar o sql',error)
+    throw error;
+  } finally{
+    await client.end();
+  }
+  
+  
 }
 
 
