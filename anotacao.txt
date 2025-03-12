@@ -32,3 +32,8 @@ process.env -> produção
 .env -> valor mais baixo na hierarquia 
 
 comando para criar pasta via terminal
+
+===Git===
+rm= remove
+rf = recursiva e forcada
+exemplo  rm -rf infra/migrations
